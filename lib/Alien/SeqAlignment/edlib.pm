@@ -2,7 +2,6 @@ use strict;
 use warnings;
 package Alien::SeqAlignment::edlib;
 
-$Alien::SeqAlignment::edlib = '0.07';
 
 use parent qw( Alien::Base );
 
