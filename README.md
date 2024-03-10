@@ -58,6 +58,7 @@ make files, this method will return undef under Windows.
     # output
 
 Using HW alignment mode.
+
 Reading queries...
 Read 1 queries, 6 residues total.
 Reading target fasta file...
