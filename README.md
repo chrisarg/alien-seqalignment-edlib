@@ -59,17 +59,17 @@ make files, this method will return undef under Windows.
 
 Using HW alignment mode.
 
-Reading queries...
-Read 1 queries, 6 residues total.
-Reading target fasta file...
-Read target, 11 residues.
-
-Comparing queries to target...
-
-Query #0 (6 residues): score = 1
-T: ACGTCG (5 - 10)
-   ||| ||
-Q: ACGACG (0 - 5)
+    Reading queries...
+    Read 1 queries, 6 residues total.
+    Reading target fasta file...
+    Read target, 11 residues.
+    
+    Comparing queries to target...
+    
+    Query #0 (6 residues): score = 1
+    T: ACGTCG (5 - 10)
+       ||| ||
+    Q: ACGACG (0 - 5)
 
 # SEE ALSO
 
