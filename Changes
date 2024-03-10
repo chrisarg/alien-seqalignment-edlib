@@ -1,0 +1,21 @@
+Revision history for Alien-SeqAlignment-edlib
+
+0.07      2024-03-09 19:08:28-07:00 America/Denver
+- provided complete usage example of the application
+0.06      2024-03-09 18:23:35-07:00 America/Denver
+- Restructured the alienfile & documentation, removed helper function
+0.05      2023-09-23 20:22:19-06:00 America/Denver
+ - Fixed mistakes in the POD documentation
+0.04      2023-09-04 00:01:00-06:00 America/Denver
+ - Formatted alienfile through perltidy
+ - Code checks for Windows OS to determine executable file extension
+ - Fixed XS and FFI test that referred to an earlier name of this package
+0.03      2023-09-03 09:27:51-06:00 America/Denver
+ - Fixed POD formatting errors and updated documentation
+ - Provided alternative download locations of the edlib library
+ - Added boiler plate perl critic test for the distribution
+0.02      2023-09-03 09:21:02-06:00 America/Denver
+ - Fixed documentation to provide links to other CPAN modules implementing
+ Leveshtein distance calculations 
+ 0.01      2023-09-02 17:50:20-06:00 America/Denver
+ - Initial release 
