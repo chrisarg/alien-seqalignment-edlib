@@ -4,7 +4,7 @@ Alien::SeqAlignment::edlib - find, build and install the edlib library
 
 # SYNOPSIS
 
-To execute the alignment using the commande line tool:
+To execute the alignment using the command line tool:
 
     use Alien::SeqAlignment::edlib;
     use Env qw( @PATH );
@@ -37,9 +37,10 @@ make files, this method will return undef under Windows.
 
 # USAGE
 
-    use v5.38;
-    use Alien::SeqAlignment::edlib;
-    use Env qw( @PATH );
+## Command line tool
+ use v5.38;
+ use Alien::SeqAlignment::edlib;
+ use Env qw( @PATH );
 
     unshift @PATH, Alien::SeqAlignment::edlib->bin_dir;
     my $string1 =      "ACGACG";
@@ -57,18 +58,18 @@ make files, this method will return undef under Windows.
 
 Output
 
-	Using HW alignment mode.
-	Reading queries...
-	Read 1 queries, 6 residues total.
-	Reading target fasta file...
-	Read target, 11 residues.
+        Using HW alignment mode.
+        Reading queries...
+        Read 1 queries, 6 residues total.
+        Reading target fasta file...
+        Read target, 11 residues.
 
-	Comparing queries to target...
+        Comparing queries to target...
 
-	Query #0 (6 residues): score = 1
-	T: ACGTCG (5 - 10)
-	   ||| ||
-	Q: ACGACG (0 - 5)
+        Query #0 (6 residues): score = 1
+        T: ACGTCG (5 - 10)
+           ||| ||
+        Q: ACGACG (0 - 5)
 
 # SEE ALSO
 

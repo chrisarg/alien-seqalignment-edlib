@@ -1,5 +1,7 @@
 Revision history for Alien-SeqAlignment-edlib
 
+0.08      2024-03-10 13:17:26-06:00 America/Denver
+- reformatted POD documentation and fixed typos in the POD
 0.07      2024-03-09 19:08:28-07:00 America/Denver
 - provided complete usage example of the application
 0.06      2024-03-09 18:23:35-07:00 America/Denver

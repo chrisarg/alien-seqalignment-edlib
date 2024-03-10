@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 package Alien::SeqAlignment::edlib;
-
+$Alien::SeqAlignment::edlib::VERSION = '0.08';
 
 use parent qw( Alien::Base );
 
@@ -12,7 +12,7 @@ Alien::SeqAlignment::edlib - find, build and install the edlib library
 
 =head1 SYNOPSIS
 
-To execute the alignment using the commande line tool:
+To execute the alignment using the command line tool:
 
  use Alien::SeqAlignment::edlib;
  use Env qw( @PATH );
@@ -55,6 +55,7 @@ sub exe {
 
 =head1 USAGE
 
+=head2 Command line tool
  use v5.38;
  use Alien::SeqAlignment::edlib;
  use Env qw( @PATH );
@@ -92,7 +93,7 @@ Output
 
 =over 4
 
-=item L<edlib|https://github.com/Martinsos/edlib>
+=item * L<edlib|https://github.com/Martinsos/edlib>
 
 Edlib is a lightweight and superfast C/C++ library for sequence 
 alignment using the edit (Levenshtein) distance between two or more
@@ -104,29 +105,19 @@ primary use is to compute edit distances and alignments over small
 (255 characters or fewer) alphabets as they occur in bioinformatic
 applications.
 
-=back
 
-=over 4
-
-=item L<Text::Levenshtein::Edlib|https://metacpan.org/pod/Text::Levenshtein::Edlib>
+=item * L<Text::Levenshtein::Edlib|https://metacpan.org/pod/Text::Levenshtein::Edlib>
 
 An XS library that also wraps around the edlib library and returns
 edit distances, as well as alignment paths.
 
-=back
-
-=over 4
-
-=item L<Text::Levenshtein::XS|https://metacpan.org/pod/Text::Levenshtein::XS>
+=item * L<Text::Levenshtein::XS|https://metacpan.org/pod/Text::Levenshtein::XS>
 
 An XS library that computes edit distances but not alignment paths. See also 
 its github repository at: L<https://github.com/ugexe/Text--Levenshtein--XS/>)
 
-=back
 
-=over 4
-
-=item L<Text::LevenshteinXS|https://metacpan.org/pod/Text::LevenshteinXS>
+=item * L<Text::LevenshteinXS|https://metacpan.org/pod/Text::LevenshteinXS>
 
 Yet another XS implementation of Levenshtein distance over strings 
 (no alignment path).
@@ -135,22 +126,20 @@ Yet another XS implementation of Levenshtein distance over strings
 
 =over 4
 
-=item L<Alien>
+=item * L<Alien>
 
 Documentation on the Alien concept itself.
 
-=item L<Alien::Base|https://metacpan.org/pod/Alien::Base>
+=item * L<Alien::Base|https://metacpan.org/pod/Alien::Base>
 
 The base class for this Alien. The methods in that class allow you to use
 the static and the dynamic edlib library in your code. 
 
-=item L<Alien::Build::Manual::AlienUser|https://metacpan.org/dist/Alien-Build/view/lib/Alien/Build/Manual/AlienUser.pod>
+=item * L<Alien::Build::Manual::AlienUser|https://metacpan.org/dist/Alien-Build/view/lib/Alien/Build/Manual/AlienUser.pod>
 
 Detailed manual for users of Alien classes.
 
 =back
-
-=cut
 
 =head1 AUTHOR
 
@@ -166,3 +155,4 @@ the same terms as the Perl 5 programming language system itself.
 =cut
 
 1;
+
