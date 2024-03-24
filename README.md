@@ -2,6 +2,10 @@
 
 Alien::SeqAlignment::edlib - find, build and install the edlib library
 
+# VERSION
+
+version 0.09
+
 # SYNOPSIS
 
 To execute the alignment using the command line tool:
@@ -10,7 +14,7 @@ To execute the alignment using the command line tool:
     use Env qw( @PATH );
 
     unshift @PATH, Alien::SeqAlignment::edlib->bin_dir;
-    system Alien::SeqAlignment::edlib->exe, (list of options), <queries.fasta>, <target.fasta>;
+    system Alien::SeqAlignment::edlib->edlib_aligner, (list of options), <queries.fasta>, <target.fasta>;
 
 # DESCRIPTION
 
@@ -27,9 +31,9 @@ The build provides the static and shared libraries, but also the CLI aligner
 
 # METHODS
 
-## exe
+## edlib\_aligner
 
-    Alien::SeqAlignment::edlib->exe
+    Alien::SeqAlignment::edlib->edlib_aligner
 
 Returns the command name for running the CLI version of the edlib aligner
 Since the command line tool is not built under Windows by the edlib project
@@ -38,9 +42,10 @@ make files, this method will return undef under Windows.
 # USAGE
 
 ## Command line tool
- use v5.38;
- use Alien::SeqAlignment::edlib;
- use Env qw( @PATH );
+
+    use v5.38;
+    use Alien::SeqAlignment::edlib;
+    use Env qw( @PATH );
 
     unshift @PATH, Alien::SeqAlignment::edlib->bin_dir;
     my $string1 =      "ACGACG";
@@ -54,7 +59,7 @@ make files, this method will return undef under Windows.
     say $fh ">Seq2\n$string2";
     close $fh;
 
-    system Alien::SeqAlignment::edlib->exe, '-m', 'HW','-n','0', '-k','-1','-p','-f' ,'NICE','seq1.fasta', 'seq2.fasta';
+    system Alien::SeqAlignment::edlib->edlib_aligner, '-m', 'HW','-n','0', '-k','-1','-p','-f' ,'NICE','seq1.fasta', 'seq2.fasta';
 
 Output
 
@@ -112,6 +117,11 @@ Output
 - [Alien::Build::Manual::AlienUser](https://metacpan.org/dist/Alien-Build/view/lib/Alien/Build/Manual/AlienUser.pod)
 
     Detailed manual for users of Alien classes.
+
+- [Bio::SeqAlignment](https://metacpan.org/pod/Bio::SeqAlignment)
+
+    A collection of tools and libraries for aligning biological sequences 
+    from within Perl. 
 
 # AUTHOR
 
