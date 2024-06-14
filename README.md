@@ -4,7 +4,7 @@ Alien::SeqAlignment::edlib - find, build and install the edlib library
 
 # VERSION
 
-version 0.09
+version 0.10
 
 # SYNOPSIS
 
